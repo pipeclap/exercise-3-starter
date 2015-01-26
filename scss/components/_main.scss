@@ -22,7 +22,8 @@ body{
   font-family: sans-serif;
   @include zero;
   // Hides close button if there is no js
-  &.noscript .close-btn{
+  &.noscript .close-btn,
+  &.noscript .toggle-btn{
     display: none;
   }
 }
