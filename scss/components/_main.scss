@@ -20,6 +20,7 @@ html {
 
 body{
   font-family: sans-serif;
+  background: #222 url("http://25.media.tumblr.com/a408ad9af259cf827ed4599d60bcb0a9/tumblr_myebwtELvb1st5lhmo1_1280.jpg") no-repeat fixed center;
   @include zero;
   // Hides close button if there is no js
   &.noscript .close-btn,
@@ -31,6 +32,9 @@ body{
 header {
   padding: 0 1em;
   position: relative;
+  color: $title-text-color;
+  font-family: sans-serif;
+  font-size: 30px;
 }
 
 .toggle-btn{
@@ -53,16 +57,20 @@ header {
     &:first-child a{
       border-top: 1px solid $light-grey;
     }
+    &:hover {
+      background-color: #eee;
+      opacity: 0.5;
+    }
   }
 }
 
 .toggle-btn,
 .close-btn{
-  color: $text-color;
-  height: 40px;
-  width: 40px;
+  margin-top: 25px;
+  color: $title-text-color;
+  height: 80px;
+  width: 80px;
   i{
-    border: 1px solid $light-grey;
     padding: .5em;
   }
   span{
