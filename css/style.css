@@ -111,63 +111,60 @@ header {
   padding: 0; }
   /* line 48, /Users/pipeclap/Desktop/Final Web Development/exercise-3-starter/scss/components/main */
   .navigation ul li {
-    list-style-type: none; }
-    /* line 50, /Users/pipeclap/Desktop/Final Web Development/exercise-3-starter/scss/components/main */
+    list-style-type: none;
+    border-bottom: 1px solid #ccc; }
+    /* line 51, /Users/pipeclap/Desktop/Final Web Development/exercise-3-starter/scss/components/main */
     .navigation ul li a {
       display: block;
       padding: 0.5em 1em;
       text-align: center;
-      border-bottom: 1px solid #ccc;
       text-decoration: none; }
-    /* line 57, /Users/pipeclap/Desktop/Final Web Development/exercise-3-starter/scss/components/main */
-    .navigation ul li:first-child a {
-      border-top: 1px solid #ccc; }
-    /* line 60, /Users/pipeclap/Desktop/Final Web Development/exercise-3-starter/scss/components/main */
+    /* line 58, /Users/pipeclap/Desktop/Final Web Development/exercise-3-starter/scss/components/main */
     .navigation ul li:hover {
       background-color: #eee;
       opacity: 0.5; }
 
-/* line 68, /Users/pipeclap/Desktop/Final Web Development/exercise-3-starter/scss/components/main */
+/* line 66, /Users/pipeclap/Desktop/Final Web Development/exercise-3-starter/scss/components/main */
 .toggle-btn, .close-btn {
   margin-top: 25px;
   color: #C200FF;
   height: 80px;
   width: 80px; }
-  /* line 73, /Users/pipeclap/Desktop/Final Web Development/exercise-3-starter/scss/components/main */
+  /* line 71, /Users/pipeclap/Desktop/Final Web Development/exercise-3-starter/scss/components/main */
   .toggle-btn i, .close-btn i {
     padding: 0.5em; }
-  /* line 76, /Users/pipeclap/Desktop/Final Web Development/exercise-3-starter/scss/components/main */
+  /* line 74, /Users/pipeclap/Desktop/Final Web Development/exercise-3-starter/scss/components/main */
   .toggle-btn span, .close-btn span {
     text-indent: 100%;
     white-space: nowrap;
     overflow: hidden;
     display: block; }
 
-@media only screen and (max-width: 60em) {
-  /* line 86, /Users/pipeclap/Desktop/Final Web Development/exercise-3-starter/scss/components/main */
+@media only screen and (max-width: 40em) {
+  /* line 84, /Users/pipeclap/Desktop/Final Web Development/exercise-3-starter/scss/components/main */
   .site-wrapper {
     position: relative;
     overflow: hidden;
     width: 100%;
     z-index: 100; }
-    /* line 91, /Users/pipeclap/Desktop/Final Web Development/exercise-3-starter/scss/components/main */
+    /* line 89, /Users/pipeclap/Desktop/Final Web Development/exercise-3-starter/scss/components/main */
     .site-wrapper .sliding-canvas {
       width: 100%;
       height: 100%;
       position: relative;
       transition: translateX(0);
       transition: all 300ms ease-in-out; }
-    /* line 98, /Users/pipeclap/Desktop/Final Web Development/exercise-3-starter/scss/components/main */
+    /* line 96, /Users/pipeclap/Desktop/Final Web Development/exercise-3-starter/scss/components/main */
     .site-wrapper[data-state="slide-open"] .sliding-canvas {
       -webkit-transform: translateX(-100%);
           -ms-transform: translateX(-100%);
               transform: translateX(-100%);
       overflow: visible; }
-    /* line 102, /Users/pipeclap/Desktop/Final Web Development/exercise-3-starter/scss/components/main */
+    /* line 100, /Users/pipeclap/Desktop/Final Web Development/exercise-3-starter/scss/components/main */
     .site-wrapper[data-state="slide-open"] {
       overflow: visible; }
 
-  /* line 110, /Users/pipeclap/Desktop/Final Web Development/exercise-3-starter/scss/components/main */
+  /* line 108, /Users/pipeclap/Desktop/Final Web Development/exercise-3-starter/scss/components/main */
   .slide-menu {
     position: absolute;
     width: 100%;
@@ -178,14 +175,24 @@ header {
     min-height: 600px; }
  }
 
-@media only screen and (min-width: 60em) {
-  /* line 124, /Users/pipeclap/Desktop/Final Web Development/exercise-3-starter/scss/components/main */
+@media only screen and (min-width: 45em) {
+  /* line 121, /Users/pipeclap/Desktop/Final Web Development/exercise-3-starter/scss/components/main */
   .toggle-btn, .close-btn {
     display: none; }
 
-  /* line 127, /Users/pipeclap/Desktop/Final Web Development/exercise-3-starter/scss/components/main */
+  /* line 124, /Users/pipeclap/Desktop/Final Web Development/exercise-3-starter/scss/components/main */
+  .slide-menu {
+    display: block; }
+ }
+
+@media only screen and (min-width: 60em) {
+  /* line 131, /Users/pipeclap/Desktop/Final Web Development/exercise-3-starter/scss/components/main */
+  .toggle-btn, .close-btn {
+    display: none; }
+
+  /* line 134, /Users/pipeclap/Desktop/Final Web Development/exercise-3-starter/scss/components/main */
   .slide-menu {
     display: inline-block;
-    position: static;
-    right: auto; }
+    background: #F69FFF;
+    padding-bottom: 600px; }
  }

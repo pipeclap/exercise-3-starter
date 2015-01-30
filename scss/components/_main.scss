@@ -47,15 +47,13 @@ header {
   @include zero;
   li{
     list-style-type: none;
+    border-bottom: 1px solid $light-grey;
     a{
       display: block;
       padding: .5em 1em;
       text-align: center;
-      border-bottom: 1px solid $light-grey;
+
       text-decoration: none;
-    }
-    &:first-child a{
-      border-top: 1px solid $light-grey;
     }
     &:hover {
       background-color: #eee;
@@ -80,7 +78,7 @@ header {
 
 // Sliding media Navigation
 
-@media only screen and (max-width: 60em){
+@media only screen and (max-width: 40em){
 // Page should move when nav opens
 // Only time we will never use max-width
   .site-wrapper{
@@ -118,6 +116,15 @@ header {
   }
 
 }// @media
+@media only screen and (min-width: 45em){
+  .toggle-btn,
+  .close-btn{
+    display: none;
+  }
+  .slide-menu{
+    display: block;
+  }
+}
 
 @media only screen and (min-width: 60em){
   .toggle-btn,
@@ -126,12 +133,10 @@ header {
   }
   .slide-menu{
     display: inline-block;
-    position: static;
-    right: auto;
+    background: $background-left-nav;
+    padding-bottom: 600px;
   }
 }
-
-
 
 
 
