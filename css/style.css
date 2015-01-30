@@ -185,6 +185,7 @@ header {
 
   /* line 127, /Users/pipeclap/Desktop/Final Web Development/exercise-3-starter/scss/components/main */
   .slide-menu {
+    display: inline-block;
     position: static;
     right: auto; }
  }
